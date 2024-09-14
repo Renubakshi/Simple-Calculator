@@ -1,0 +1,79 @@
+/* BASIC PROPERTIES */
+*{
+    box-sizing:border-box;
+    margin:0rem;
+    padding:0rem;
+}
+html{
+    font-size: 62.5%;
+}
+/* CSS VARIABLES */
+:root{
+    --primary:aquamarine;
+    --dark: black;
+    --light: white;
+    --dark-blue:rgb(20, 20, 221);
+}
+
+/* BACKGROUND */
+.background{
+    height: 100vh;
+    background: var(--primary) url("../assets/bg.gif") no-repeat center/cover;
+}
+/* CONTAINER  */
+.frame{
+    width: 39%;
+    margin: auto;
+    padding-top: 1rem;
+}
+.input #text{
+    padding: .4rem;
+    margin: 1rem 0rem;
+    width: 100%;
+    text-align: right;
+    height: 5rem;
+    font-weight: 700;
+    border-radius: 1.1rem;
+    border: 0.2rem ridge var(--dark);
+}
+#container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align: center;
+    background-color: var(--light);
+    border-radius: 1.1rem;
+}
+
+
+.btn.special{
+    font-size: 2rem;
+    background-color:rgb(88 118 116);
+}
+
+/* UTILITY CLASSES */
+.btn{
+    background-color: var(--dark);
+    font-weight: 700;
+    border : .2rem solid var(--dark-blue);
+    border-radius:1.5rem;
+    color: var(--light);
+    height: 5rem;
+    margin: 1.5rem 1.3rem;
+    box-shadow: 0.4rem 0.3rem 0.8rem var(--dark)
+}
+.h1{
+    text-align: center;
+    padding-top: 8rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width:800px){
+    .frame{
+        width: 62%;
+    }
+}
+@media screen and (max-width:300px){
+    .frame{
+        width: 82%;
+    }
+}
